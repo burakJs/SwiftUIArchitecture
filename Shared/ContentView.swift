@@ -10,7 +10,35 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack(alignment:.center) {
+        VStack {
+            // MARK: Login View
+            // TODO: Fix User Name
+            Group {
+                VStack {
+                    Text("Hello")
+                        .tint(.blue)
+                        .font(.callout)
+                }
+                .frame(width: 200, height: 200, alignment: .center)
+                .background(Color("MyColorSet"))
+            }
+            
+            // MARK: Register View
+            Group {
+                VStack {
+                    Image(systemName: "moon.fill")
+                        .foregroundColor(.red)
+                    Text("Hello2")
+                        .foregroundColor(.blue)
+                        .opacity(0.8)
+                }
+            }
+            
+        }
+    }
+    
+    fileprivate func demoView() -> some View {
+        return VStack(alignment:.center) {
             Rectangle().frame(width: 100, height: 100, alignment: .center)
             Circle()
                 .foregroundColor(.red)
@@ -29,11 +57,10 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .fontWeight(.heavy)
                         .font(.largeTitle)
-                        
+                    
                 }.frame(height: 100, alignment: .center)
             }.frame( height: 500, alignment: .top)
         }
-        
     }
     
     fileprivate func sampleHorizontalView() -> some View {
