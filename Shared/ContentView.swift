@@ -10,7 +10,30 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        sampleStackView()
+        VStack(alignment:.center) {
+            Rectangle().frame(width: 100, height: 100, alignment: .center)
+            Circle()
+                .foregroundColor(.red)
+                .frame(height: 100, alignment: .center)
+            Text("Sample 1")
+            Text("Sample 2")
+            Text("Sample 3")
+            Spacer()
+            HStack(){
+                RoundedRectangle(cornerRadius: 25)
+                    .frame(height: 100, alignment: .center)
+                
+                ZStack {
+                    Circle()
+                    Text("Hello")
+                        .foregroundColor(.white)
+                        .fontWeight(.heavy)
+                        .font(.largeTitle)
+                        
+                }.frame(height: 100, alignment: .center)
+            }.frame( height: 500, alignment: .top)
+        }
+        
     }
     
     fileprivate func sampleHorizontalView() -> some View {
