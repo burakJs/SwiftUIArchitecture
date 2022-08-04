@@ -7,10 +7,34 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct IconFieldView: View {
+    
+    var iconName: String = "Hello"
+    @State var textFieldValue: String = ""
     
     var body: some View {
         VStack {
+            TextField("Placeholder", text: $textFieldValue)
+            Text("Text: \(textFieldValue)")
+                .font(.largeTitle)
+                .bold()
+            
+            Image(systemName: textFieldValue.lowercased())
+                .font(.largeTitle)
+                .frame(width: 100, height: 100, alignment: .center)
+        }
+        
+    }
+}
+
+struct ContentView: View {
+    
+    var body: some View {
+        Color.red
+    }
+    
+    fileprivate func groupViews() -> some View {
+        return VStack {
             // MARK: Login View
             // TODO: Fix User Name
             Group {
@@ -109,11 +133,10 @@ struct ContentView: View {
         }
     }
     
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        IconFieldView()
     }
 }
