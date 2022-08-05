@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct IconFieldView: View {
     
@@ -28,9 +29,11 @@ struct IconFieldView: View {
 }
 
 struct ContentView: View {
+    private let imageUrl:String = "https://picsum.photos/id/237/200/300"
     
     var body: some View {
-        Color.red
+        CircleTextImage(title: "Kabus", imageUrl: imageUrl)
+            .frame(width: 200, height: 200, alignment: .center)
     }
     
     fileprivate func groupViews() -> some View {
@@ -137,6 +140,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        IconFieldView()
+        ContentView()
     }
 }
