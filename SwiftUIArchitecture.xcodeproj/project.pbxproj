@@ -19,6 +19,7 @@
 		670673CE289B443100404CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670673A3289B443100404CF9 /* Assets.xcassets */; };
 		67BAA62B289CAE3200AB5EFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 67BAA62A289CAE3200AB5EFE /* Kingfisher */; };
 		67BAA62F289CB04F00AB5EFE /* CircleTextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BAA62E289CB04F00AB5EFE /* CircleTextImage.swift */; };
+		67BAA632289CB28600AB5EFE /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BAA631289CB28600AB5EFE /* SampleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		670673C5289B443100404CF9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		670673C7289B443100404CF9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		67BAA62E289CB04F00AB5EFE /* CircleTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextImage.swift; sourceTree = "<group>"; };
+		67BAA631289CB28600AB5EFE /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		670673A0289B443000404CF9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				67BAA630289CB26200AB5EFE /* Feature */,
 				67BAA62C289CB02200AB5EFE /* View */,
 				670673A1289B443000404CF9 /* SwiftUIArchitectureApp.swift */,
 				670673A2289B443000404CF9 /* ContentView.swift */,
@@ -160,6 +163,14 @@
 				67BAA62E289CB04F00AB5EFE /* CircleTextImage.swift */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		67BAA630289CB26200AB5EFE /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				67BAA631289CB28600AB5EFE /* SampleListView.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67BAA632289CB28600AB5EFE /* SampleListView.swift in Sources */,
 				670673CB289B443100404CF9 /* ContentView.swift in Sources */,
 				670673C9289B443100404CF9 /* SwiftUIArchitectureApp.swift in Sources */,
 				67BAA62F289CB04F00AB5EFE /* CircleTextImage.swift in Sources */,
