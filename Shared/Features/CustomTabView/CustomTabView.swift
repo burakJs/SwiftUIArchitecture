@@ -63,7 +63,7 @@ struct HeartView: View {
                 } label: {
                     Label("Lightning", systemImage: "bolt.fill")
                 }
-
+ 
                 List {
                     ForEach(fruits,id: \.self) { fruit in
                         Text(fruit)
