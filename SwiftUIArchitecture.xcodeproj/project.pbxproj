@@ -22,6 +22,12 @@
 		671E99D228AB026E001CAFDA /* EnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99D128AB026E001CAFDA /* EnvironmentView.swift */; };
 		671E99D428AB04DB001CAFDA /* Spacer+Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99D328AB04DB001CAFDA /* Spacer+Constant.swift */; };
 		671E99D628AB0C15001CAFDA /* DateControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99D528AB0C15001CAFDA /* DateControlView.swift */; };
+		671E99DE28AB1368001CAFDA /* RandomFoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99DD28AB1368001CAFDA /* RandomFoxView.swift */; };
+		671E99E028AB1697001CAFDA /* FoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99DF28AB1697001CAFDA /* FoxModel.swift */; };
+		671E99E228AB16DB001CAFDA /* FoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99E128AB16DB001CAFDA /* FoxService.swift */; };
+		671E99E528AB17A1001CAFDA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 671E99E428AB17A1001CAFDA /* Alamofire */; };
+		671E99E728AB19B2001CAFDA /* FoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E99E628AB19B2001CAFDA /* FoxViewModel.swift */; };
+		671E99EA28AB1B8B001CAFDA /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 671E99E928AB1B8B001CAFDA /* ActivityIndicatorView */; };
 		6742E86528A5A9E5001863DA /* ModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742E86428A5A9E5001863DA /* ModelListView.swift */; };
 		6742E86728A5AA85001863DA /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6742E86628A5AA85001863DA /* TweetModel.swift */; };
 		67820A7328A9B8CA00CABEDD /* TweetCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67820A7228A9B8CA00CABEDD /* TweetCards.swift */; };
@@ -68,6 +74,10 @@
 		671E99D128AB026E001CAFDA /* EnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentView.swift; sourceTree = "<group>"; };
 		671E99D328AB04DB001CAFDA /* Spacer+Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spacer+Constant.swift"; sourceTree = "<group>"; };
 		671E99D528AB0C15001CAFDA /* DateControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateControlView.swift; sourceTree = "<group>"; };
+		671E99DD28AB1368001CAFDA /* RandomFoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFoxView.swift; sourceTree = "<group>"; };
+		671E99DF28AB1697001CAFDA /* FoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxModel.swift; sourceTree = "<group>"; };
+		671E99E128AB16DB001CAFDA /* FoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxService.swift; sourceTree = "<group>"; };
+		671E99E628AB19B2001CAFDA /* FoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewModel.swift; sourceTree = "<group>"; };
 		6742E86428A5A9E5001863DA /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
 		6742E86628A5AA85001863DA /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		67820A7228A9B8CA00CABEDD /* TweetCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCards.swift; sourceTree = "<group>"; };
@@ -84,6 +94,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BAA62B289CAE3200AB5EFE /* Kingfisher in Frameworks */,
+				671E99EA28AB1B8B001CAFDA /* ActivityIndicatorView in Frameworks */,
+				671E99E528AB17A1001CAFDA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +202,49 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
+		671E99D728AB11F8001CAFDA /* FoxViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				671E99DB28AB130F001CAFDA /* Model */,
+				671E99DA28AB1308001CAFDA /* Service */,
+				671E99D928AB1302001CAFDA /* ViewModel */,
+				671E99D828AB12FC001CAFDA /* View */,
+			);
+			path = FoxViewModel;
+			sourceTree = "<group>";
+		};
+		671E99D828AB12FC001CAFDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				671E99DD28AB1368001CAFDA /* RandomFoxView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		671E99D928AB1302001CAFDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				671E99E628AB19B2001CAFDA /* FoxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		671E99DA28AB1308001CAFDA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				671E99E128AB16DB001CAFDA /* FoxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		671E99DB28AB130F001CAFDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				671E99DF28AB1697001CAFDA /* FoxModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6742E86328A5A9D4001863DA /* ModelList */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +284,7 @@
 		67BAA630289CB26200AB5EFE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				671E99D728AB11F8001CAFDA /* FoxViewModel */,
 				671E99D028AB01F9001CAFDA /* Environment */,
 				671E99CB28AAE19F001CAFDA /* CustomTabView */,
 				67820A7428A9C6B400CABEDD /* Navigation */,
@@ -256,6 +312,8 @@
 			name = "SwiftUIArchitecture (iOS)";
 			packageProductDependencies = (
 				67BAA62A289CAE3200AB5EFE /* Kingfisher */,
+				671E99E428AB17A1001CAFDA /* Alamofire */,
+				671E99E928AB1B8B001CAFDA /* ActivityIndicatorView */,
 			);
 			productName = "SwiftUIArchitecture (iOS)";
 			productReference = 670673A8289B443100404CF9 /* SwiftUIArchitecture.app */;
@@ -351,6 +409,8 @@
 			mainGroup = 6706739B289B443000404CF9;
 			packageReferences = (
 				67BAA629289CAE3200AB5EFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				671E99E328AB17A1001CAFDA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				671E99E828AB1B8B001CAFDA /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = 670673A9289B443100404CF9 /* Products */;
 			projectDirPath = "";
@@ -402,6 +462,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671E99DE28AB1368001CAFDA /* RandomFoxView.swift in Sources */,
+				671E99E028AB1697001CAFDA /* FoxModel.swift in Sources */,
 				67820A7A28A9C98D00CABEDD /* UserViewDetail.swift in Sources */,
 				671E99D428AB04DB001CAFDA /* Spacer+Constant.swift in Sources */,
 				671E99D628AB0C15001CAFDA /* DateControlView.swift in Sources */,
@@ -409,10 +471,12 @@
 				670673CB289B443100404CF9 /* ContentView.swift in Sources */,
 				67820A7628A9C6D200CABEDD /* NavigationUsers.swift in Sources */,
 				671E99D228AB026E001CAFDA /* EnvironmentView.swift in Sources */,
+				671E99E228AB16DB001CAFDA /* FoxService.swift in Sources */,
 				670673C9289B443100404CF9 /* SwiftUIArchitectureApp.swift in Sources */,
 				6742E86728A5AA85001863DA /* TweetModel.swift in Sources */,
 				67820A7328A9B8CA00CABEDD /* TweetCards.swift in Sources */,
 				671E99CD28AAE1BF001CAFDA /* CustomTabView.swift in Sources */,
+				671E99E728AB19B2001CAFDA /* FoxViewModel.swift in Sources */,
 				67BAA62F289CB04F00AB5EFE /* CircleTextImage.swift in Sources */,
 				671E99CF28AAE48D001CAFDA /* CustomTabIndex.swift in Sources */,
 				67820A7828A9C73400CABEDD /* UserModel.swift in Sources */,
@@ -819,6 +883,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		671E99E328AB17A1001CAFDA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		671E99E828AB1B8B001CAFDA /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		67BAA629289CAE3200AB5EFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -830,6 +910,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		671E99E428AB17A1001CAFDA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 671E99E328AB17A1001CAFDA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		671E99E928AB1B8B001CAFDA /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 671E99E828AB1B8B001CAFDA /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
 		67BAA62A289CAE3200AB5EFE /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67BAA629289CAE3200AB5EFE /* XCRemoteSwiftPackageReference "Kingfisher" */;
