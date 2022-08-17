@@ -43,6 +43,11 @@
 		67E276FD28AC66F300324BE1 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 67E276FC28AC66F300324BE1 /* Logging */; };
 		67E276FF28AC69B000324BE1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E276FE28AC69B000324BE1 /* UserViewModel.swift */; };
 		67E2770128AC6AE100324BE1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2770028AC6AE100324BE1 /* UserView.swift */; };
+		67E2770628AC766B00324BE1 /* MarketHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2770528AC766B00324BE1 /* MarketHomeView.swift */; };
+		67E2770A28AC76A400324BE1 /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2770928AC76A400324BE1 /* MarketItem.swift */; };
+		67E2770C28AC778500324BE1 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2770B28AC778500324BE1 /* MarketViewModel.swift */; };
+		67E2770E28AC7B1F00324BE1 /* MarketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2770D28AC7B1F00324BE1 /* MarketDetailView.swift */; };
+		67E2771128AC7B4100324BE1 /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2771028AC7B4100324BE1 /* MarketDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +102,11 @@
 		67BAA631289CB28600AB5EFE /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 		67E276FE28AC69B000324BE1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		67E2770028AC6AE100324BE1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		67E2770528AC766B00324BE1 /* MarketHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketHomeView.swift; sourceTree = "<group>"; };
+		67E2770928AC76A400324BE1 /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
+		67E2770B28AC778500324BE1 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		67E2770D28AC7B1F00324BE1 /* MarketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailView.swift; sourceTree = "<group>"; };
+		67E2771028AC7B4100324BE1 /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +366,7 @@
 		67BAA630289CB26200AB5EFE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				67E2770228AC763900324BE1 /* Market */,
 				671A894728ABCD99000371D6 /* ReqResViewModel */,
 				671E99D728AB11F8001CAFDA /* FoxViewModel */,
 				671E99D028AB01F9001CAFDA /* Environment */,
@@ -365,6 +376,58 @@
 				67BAA631289CB28600AB5EFE /* SampleListView.swift */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		67E2770228AC763900324BE1 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				67E2770428AC764500324BE1 /* HomeDetail */,
+				67E2770328AC763F00324BE1 /* Home */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		67E2770328AC763F00324BE1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67E2770828AC769500324BE1 /* Model */,
+				67E2770728AC768400324BE1 /* ViewModel */,
+				67E2770528AC766B00324BE1 /* MarketHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67E2770428AC764500324BE1 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				67E2770F28AC7B3400324BE1 /* ViewModel */,
+				67E2770D28AC7B1F00324BE1 /* MarketDetailView.swift */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		67E2770728AC768400324BE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67E2770B28AC778500324BE1 /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67E2770828AC769500324BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67E2770928AC76A400324BE1 /* MarketItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67E2770F28AC7B3400324BE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67E2771028AC7B4100324BE1 /* MarketDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,7 +600,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E2770628AC766B00324BE1 /* MarketHomeView.swift in Sources */,
 				671E99DE28AB1368001CAFDA /* RandomFoxView.swift in Sources */,
+				67E2770C28AC778500324BE1 /* MarketViewModel.swift in Sources */,
 				671E99E028AB1697001CAFDA /* FoxModel.swift in Sources */,
 				67820A7A28A9C98D00CABEDD /* UserViewDetail.swift in Sources */,
 				671E99D428AB04DB001CAFDA /* Spacer+Constant.swift in Sources */,
@@ -550,9 +615,11 @@
 				67E276FF28AC69B000324BE1 /* UserViewModel.swift in Sources */,
 				671E99E228AB16DB001CAFDA /* FoxService.swift in Sources */,
 				670673C9289B443100404CF9 /* SwiftUIArchitectureApp.swift in Sources */,
+				67E2770A28AC76A400324BE1 /* MarketItem.swift in Sources */,
 				6742E86728A5AA85001863DA /* TweetModel.swift in Sources */,
 				67820A7328A9B8CA00CABEDD /* TweetCards.swift in Sources */,
 				671A894F28ABCE64000371D6 /* UserService.swift in Sources */,
+				67E2770E28AC7B1F00324BE1 /* MarketDetailView.swift in Sources */,
 				671E99CD28AAE1BF001CAFDA /* CustomTabView.swift in Sources */,
 				671E99E728AB19B2001CAFDA /* FoxViewModel.swift in Sources */,
 				671A895328ABD05E000371D6 /* Logging+AFError.swift in Sources */,
@@ -561,6 +628,7 @@
 				671E99CF28AAE48D001CAFDA /* CustomTabIndex.swift in Sources */,
 				67820A7828A9C73400CABEDD /* UserModel.swift in Sources */,
 				6742E86528A5A9E5001863DA /* ModelListView.swift in Sources */,
+				67E2771128AC7B4100324BE1 /* MarketDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
